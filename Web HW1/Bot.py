@@ -74,37 +74,6 @@ class ViewBot(AbstractBot):
     def handle(self):
         print(self.book)
 
-
-# class Bot:
-#     def __init__(self):
-#         self.book = AddressBook()
-
-#     def handle(self, action):
-
-#         elif action == 'edit':
-#             contact_name = input('Contact name: ')
-#             parameter = input('Which parameter to edit(name, phones, birthday, status, email, note): ').strip()
-#             new_value = input("New Value: ")
-#             return self.book.edit(contact_name, parameter, new_value)
-#         elif action == 'remove':
-#             pattern = input("Remove (contact name or phone): ")
-#             return self.book.remove(pattern)
-#         elif action == 'save':
-#             file_name = input("File name: ")
-#             return self.book.save(file_name)
-#         elif action == 'load':
-#             file_name = input("File name: ")
-#             return self.book.load(file_name)
-#         elif action == 'congratulate':
-#             print(self.book.congratulate())
-#         elif action == 'view':
-#             print(self.book)
-#         elif action == 'exit':
-#             pass
-#         else:
-#             print("There is no such command!")
-
-
 class ExitBot(AbstractBot):
     def handle(self):
         print("Bye!")
